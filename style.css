@@ -128,6 +128,7 @@ body{
 
 .featured-title{
     width: 200px;
+    border-radius: 10px;
 }
 
 .featured-desc{
@@ -147,17 +148,20 @@ body{
 }
 
 .movie-list-container{
-    padding: 20px;
+    padding: 0 20px;
 }
 
 .movie-list-wrapper{
     position: relative;
+    overflow: hidden;
 }
 
 .movie-list{
     display: flex;
     align-items: center;
     height: 300px;
+    transform: translateX(0);
+    transition: all 1s ease-in-out;
 }
 
 .movie-list-item{
@@ -182,6 +186,7 @@ body{
     width: 270px;
     height: 200px;
     object-fit: cover;
+    border-radius: 10px;
 }
 
 .movie-list-item-title{
@@ -233,4 +238,36 @@ body{
     color: lightgrey;
     opacity: 0.5;
     cursor: pointer;
+}
+
+.container.active{
+    background-color: white;
+}
+
+.movie-list-title.active{
+    color: black;
+}
+
+
+.navbar-container.active{
+    color: black;
+    background-color: white;
+}
+
+.sidebar.active{
+    background-color: white;
+}
+
+.left-menu-icon.active{
+    color: black;
+}
+
+.toggle.active{
+    background-color: black;
+
+}
+
+.toggle-ball.active{
+    background-color: white;
+    transform: translateX(-20px);
 }
